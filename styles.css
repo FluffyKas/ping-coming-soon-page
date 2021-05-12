@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+
+  /* Primary Colours */
+
+  --clr-primary-blue: hsl(223, 87%, 63%);
+
+  /* Secondary Colours */
+
+  --clr-secondary-blue: hsl(223, 100%, 88%);
+  --clr-secondary-red: hsl(354, 100%, 66%);
+
+  /* Neutral Colours */
+
+  --clr-neutral-gray: hsl(0, 0%, 59%);
+  --clr-neutral-dark-blue: hsl(209, 33%, 12%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+  max-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+/* HEADER SECTION */
+
+.logo {
+  padding-block: 2.5rem;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--clr-neutral-gray);
+  padding-bottom: 1.5rem;
+}
+
+.main-title-highlight {
+  font-weight: 700;
+  color: var(--clr-neutral-dark-blue);
+}
+
+.subscribe-title {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--clr-neutral-dark-blue);
+  padding-bottom: 3rem;
+}
+
+.dashboard-image {
+  width: 100%;
+  aspect-ratio: 1.666 / 1;
+
+  /* Fallback for aspect-ratio */
+  @supports not (aspect-ratio: 1.666 / 1) {
+    padding-top: 61%;
+  }
+
+}
