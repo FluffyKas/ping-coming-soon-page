@@ -20,16 +20,18 @@
 
       <img class="logo" src="images/logo.svg" alt="">
       <h1 class="main-title">We are launching <span class="main-title-highlight">soon!</span></h1>
-      <h3 class="subscribe-title">Subscribe and get notified!</h3>
+      <h3 class="subscribe-title">Subscribe and get notified</h3>
 
     </header>
 
-    <section class="subscribe-form">
+    <form>
 
-      <input type="text">
-      <a class="button" href="">Notify Me</a>
+      <label class="subscribe-form">
+        <input class="email" name="email" type="text" placeholder="Your email address..." required>
+        <a class="button" href="">Notify Me</a>
+      </label>
 
-    </section>
+    </form>
   
     <section class="image-holder">
 
@@ -38,15 +40,18 @@
     </section>
 
     <footer>   
-      
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
-      &copy; Copyright Ping. All rights reserved.
+      <div class="social-media">
+        <a class="social-media__link" href="" target="_blank"><i class="icon fab fa-facebook-f"></i></a>
+        <a class="social-media__link" href="" target="_blank"><i class="icon fab fa-twitter"></i></a>
+        <a class="social-media__link" href="" target="_blank"><i class="icon fab fa-instagram"></i></a>
+      </div>
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
 
     </footer>
     
   </div>
+
+  <script src="email.js"></script>
 
 </body>
 </html>
