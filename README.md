@@ -28,11 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshots/ping-coming-soon-page-mobile.png)
+![](./screenshots/ping-coming-soon-page-desktop.png)
 
 ### Links
 
-[Live site](https://your-live-site-url.com)
+[Live site](https://ping-coming-soon-page-kas.netlify.app/)
 
 ## My process
 
@@ -48,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-I haven't learned anything new, I used this challenge to see how fast I can complete this challenge accurately. I also wanted to practice my workflow with Sass, Parcel and Netlify to speed things up.
+I haven't learned anything new, I used this challenge to see how fast I can complete a small project accurately. I also wanted to practice my workflow with Sass, Parcel and Netlify to speed things up.
 
 ## Author
 
