@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+// COLORS
+
+// PRIMARY COLORS
+
+$clr-primary-blue: hsl(223, 87%, 63%);
+
+// SECONDARY COLORS
+
+$clr-secondary-blue: hsl(223, 100%, 88%);
+$clr-secondary-red: hsl(354, 100%, 66%);
+
+// NEUTRAL COLORS
+
+$clr-neutral-gray: hsl(0, 0%, 59%);
+$clr-neutral-blue: hsl(209, 33%, 12%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 900px;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.title {
+  color: $clr-neutral-gray;
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+
+  @media (min-width: 760px) {
+    font-size: 3rem;
+  }
+}
+
+.title-highlight {
+  color: $clr-neutral-blue;
+  font-weight: 700;
+}
+
+.sub-title {
+  color: $clr-neutral-blue;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 2.5rem;
+
+  @media (min-width: 760px) {
+    font-size: 1.2rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 0 1rem;
+  position: relative;
+
+  @media (min-width: 860px) {
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  input {
+    all: unset;
+    border: 1px solid $clr-secondary-blue;
+    border-radius: 35px;
+    color: $clr-neutral-gray;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    text-align: left;
+    
+    @media (min-width: 860px) {
+      width: 50%;
+    }
+  }
+
+  button {
+    all: unset;
+    background: $clr-primary-blue;
+    border-radius: 35px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+
+    @media (min-width: 860px) {
+      padding: 1rem 3.5rem;
+    }
+  }
+}
+
+.error-message {
+  color: $clr-secondary-red;
+  font-size: .75rem;
+  font-style: italic;
+  position: absolute;
+  top: 3.5rem;
+  left: 2rem;
+  visibility: hidden;
+
+  @media (min-width: 860px) {
+    top: 3.7rem;
+    left: 6rem;
+  }
+}
+
+.error-message.error{
+  visibility: visible;
+}
+
+.mockup {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 5rem auto 10rem auto;
+
+  @media (min-width: 900px) {
+    max-width: 650px;
+    margin: 5rem auto 4rem auto;
+  }
+}
+
+// FOOTER
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.1rem;
+  margin-bottom: 2rem;
+  
+  a {
+    border: 1px solid $clr-secondary-blue;
+    border-radius: 50%;
+    color: $clr-primary-blue;
+    font-size: .9rem;
+    text-decoration: none;
+    transition: all .2s ease-in;
+  }
+
+  a:hover {
+    background: $clr-primary-blue;
+    color: white;
+  }
+}
+
+.fa-facebook-f {
+  padding: .6rem .85rem;
+}
+
+.fa-twitter {
+  padding: .6rem .6rem;
+}
+
+.fa-instagram {
+  padding: .6rem .65rem;
+}
+
+.copyright {
+  color: $clr-neutral-gray;
+  font-size: .85rem;
+  margin-bottom: 2rem;
+}
