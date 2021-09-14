@@ -64,7 +64,7 @@ form {
     max-width: 100%;
   }
 }
-form input {
+form .email {
   all: unset;
   border: 1px solid #c2d3ff;
   border-radius: 35px;
@@ -74,9 +74,12 @@ form input {
   text-align: left;
 }
 @media (min-width: 860px) {
-  form input {
+  form .email {
     width: 50%;
   }
+}
+form .email.error {
+  border: 1px solid #ff5263;
 }
 form button {
   all: unset;
@@ -92,6 +95,9 @@ form button {
   form button {
     padding: 1rem 3.5rem;
   }
+}
+form button:hover {
+  opacity: 0.85;
 }
 
 .error-message {

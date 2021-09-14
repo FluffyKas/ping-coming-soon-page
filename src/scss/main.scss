@@ -78,7 +78,7 @@ form {
     max-width: 100%;
   }
 
-  input {
+  .email {
     all: unset;
     border: 1px solid $clr-secondary-blue;
     border-radius: 35px;
@@ -90,6 +90,10 @@ form {
     @media (min-width: 860px) {
       width: 50%;
     }
+  }
+
+  .email.error {
+    border: 1px solid $clr-secondary-red;
   }
 
   button {
@@ -105,6 +109,10 @@ form {
     @media (min-width: 860px) {
       padding: 1rem 3.5rem;
     }
+  }
+
+  button:hover {
+    opacity: .85;
   }
 }
 

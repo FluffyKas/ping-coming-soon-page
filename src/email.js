@@ -15,9 +15,11 @@ function checkInput() {
   if (emailValue === "") {
     errorMessage.className = "error-message error";
     errorMessage.innerText ="Whoops! It looks like you forgot to add your email";
+    email.className = "email error";
   } else if (!isItEmail(emailValue)) {
     errorMessage.className = "error-message error";
     errorMessage.innerText = "Looks like this is not an email";
+    email.className = "email error";
   } else {
     alert("Yay! Subscribed successfully!");
   };
