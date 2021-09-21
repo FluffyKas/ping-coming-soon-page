@@ -78,6 +78,9 @@ form .email {
     width: 50%;
   }
 }
+form .email:focus {
+  outline: 3px dotted #4f7df3;
+}
 form .email.error {
   border: 1px solid #ff5263;
 }
@@ -95,6 +98,9 @@ form button {
   form button {
     padding: 1rem 3.5rem;
   }
+}
+form button:focus {
+  outline: 3px dotted #4f7df3;
 }
 form button:hover {
   opacity: 0.85;
@@ -151,6 +157,9 @@ form button:hover {
 .social-media a:hover {
   background: #4f7df3;
   color: white;
+}
+.social-media a:focus {
+  outline: 3px dotted #4f7df3;
 }
 
 .fa-facebook-f {

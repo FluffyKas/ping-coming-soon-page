@@ -92,6 +92,10 @@ form {
     }
   }
 
+  .email:focus {
+    outline: 3px dotted $clr-primary-blue;
+  }
+
   .email.error {
     border: 1px solid $clr-secondary-red;
   }
@@ -109,6 +113,10 @@ form {
     @media (min-width: 860px) {
       padding: 1rem 3.5rem;
     }
+  }
+
+    button:focus {
+    outline: 3px dotted $clr-primary-blue;
   }
 
   button:hover {
@@ -168,6 +176,10 @@ form {
   a:hover {
     background: $clr-primary-blue;
     color: white;
+  }
+
+  a:focus {
+    outline: 3px dotted $clr-primary-blue;
   }
 }
 
