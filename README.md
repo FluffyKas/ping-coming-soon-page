@@ -51,8 +51,6 @@ Users should be able to:
 
 I haven't learned anything new, I used this challenge to see how fast I can complete a small project accurately. I also wanted to practice my workflow with Sass, Parcel and Netlify to speed things up.
 
-21.09.2020. Challenge updated with matching focus indicators
-
 ## Author
 
 - Frontend Mentor - [@FluffyKas](https://www.frontendmentor.io/profile/FluffyKas)

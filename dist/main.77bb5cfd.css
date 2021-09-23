@@ -78,11 +78,22 @@ form .email {
     width: 50%;
   }
 }
-form .email:focus {
-  outline: 3px dotted #4f7df3;
-}
 form .email.error {
   border: 1px solid #ff5263;
+}
+form .email:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted #4f7df3;
+}
+form .email:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do support :focus-visible */
+  outline: none;
+}
+form .email:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline: 3px dotted #4f7df3;
 }
 form button {
   all: unset;
@@ -99,11 +110,22 @@ form button {
     padding: 1rem 3.5rem;
   }
 }
-form button:focus {
-  outline: 3px dotted #4f7df3;
-}
 form button:hover {
   opacity: 0.85;
+}
+form button:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted #4f7df3;
+}
+form button:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do support :focus-visible */
+  outline: none;
+}
+form button:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline: 3px dotted #4f7df3;
 }
 
 .error-message {
@@ -159,6 +181,17 @@ form button:hover {
   color: white;
 }
 .social-media a:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted #4f7df3;
+}
+.social-media a:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do support :focus-visible */
+  outline: none;
+}
+.social-media a:focus-visible {
+  /* for browsers that do support :focus-visible */
   outline: 3px dotted #4f7df3;
 }
 

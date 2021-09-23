@@ -16,6 +16,9 @@ $clr-secondary-red: hsl(354, 100%, 66%);
 $clr-neutral-gray: hsl(0, 0%, 59%);
 $clr-neutral-blue: hsl(209, 33%, 12%);
 
+
+// GENERAL STYLES
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,6 +37,8 @@ main {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+// TITLE
 
 .title {
   color: $clr-neutral-gray;
@@ -62,6 +67,8 @@ main {
     font-size: 1.2rem;
   }
 }
+
+// FORM
 
 form {
   display: flex;
@@ -92,12 +99,25 @@ form {
     }
   }
 
+  .email.error {
+    border: 1px solid $clr-secondary-red;
+  }
+
   .email:focus {
+    /* Provide a fallback style for browsers
+       that don't support :focus-visible */
     outline: 3px dotted $clr-primary-blue;
   }
 
-  .email.error {
-    border: 1px solid $clr-secondary-red;
+  .email:focus:not(:focus-visible) {
+    /* Remove the focus indicator on mouse-focus for browsers
+       that do support :focus-visible */
+    outline: none;
+  }
+  
+  .email:focus-visible {
+    /* for browsers that do support :focus-visible */
+    outline: 3px dotted $clr-primary-blue;
   }
 
   button {
@@ -115,12 +135,25 @@ form {
     }
   }
 
-    button:focus {
+  button:hover {
+    opacity: .85;
+  }
+
+  button:focus {
+    /* Provide a fallback style for browsers
+       that don't support :focus-visible */
     outline: 3px dotted $clr-primary-blue;
   }
 
-  button:hover {
-    opacity: .85;
+  button:focus:not(:focus-visible) {
+    /* Remove the focus indicator on mouse-focus for browsers
+       that do support :focus-visible */
+    outline: none;
+  }
+  
+  button:focus-visible {
+    /* for browsers that do support :focus-visible */
+    outline: 3px dotted $clr-primary-blue;
   }
 }
 
@@ -142,6 +175,8 @@ form {
 .error-message.error{
   visibility: visible;
 }
+
+// MOCKUP
 
 .mockup {
   display: block;
@@ -179,6 +214,19 @@ form {
   }
 
   a:focus {
+    /* Provide a fallback style for browsers
+       that don't support :focus-visible */
+    outline: 3px dotted $clr-primary-blue;
+  }
+
+  a:focus:not(:focus-visible) {
+    /* Remove the focus indicator on mouse-focus for browsers
+       that do support :focus-visible */
+    outline: none;
+  }
+  
+  a:focus-visible {
+    /* for browsers that do support :focus-visible */
     outline: 3px dotted $clr-primary-blue;
   }
 }
